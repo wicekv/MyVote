@@ -2,7 +2,7 @@
 
 ## Description
 
-The Voting Application is a solution that allows users to add candidates and voters, and then select a candidate and a voter to cast a vote. The application focuses on ensuring data is dynamically updated in real-time, so every vote cast is immediately reflected in the user interface without needing to refresh the page.
+The Voting Application is a solution that allows users to add candidates and voters, and then select a candidate and a voter to cast a vote.
 
 ## Features
 
