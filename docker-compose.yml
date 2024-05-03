@@ -1,0 +1,6 @@
+﻿services:
+  myvote.api:
+    image: myvote.api
+    build:
+      context: .
+      dockerfile: MyVote.API/Dockerfile

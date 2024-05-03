@@ -15,7 +15,7 @@ namespace MyVote.API.Controllers
             _candidateService = candidateService;
         }
 
-        [Route("create/candidate")]
+        [Route("create")]
         [HttpPost]
         public async Task<ActionResult> CreateCandidate([FromBody] CreateCandidateDto candidateDto, CancellationToken cancellationToken)
         {
@@ -24,7 +24,6 @@ namespace MyVote.API.Controllers
             return Ok(result);
         }
 
-        [Route("candidates")]
         [HttpGet]
         public async Task<ActionResult<List<VoterDto>>> GetCandidates()
         {

@@ -15,8 +15,7 @@ namespace MyVote.API.Controllers
             _voterService = voterService;
         }
 
-
-        [Route("create/voter")]
+        [Route("create")]
         [HttpPost]
         public async Task<ActionResult> CreateVoter([FromBody] CreateVoterDto voterDto)
         {
@@ -25,7 +24,6 @@ namespace MyVote.API.Controllers
             return Ok(result);
         }
 
-        [Route("voters")]
         [HttpGet]
         public async Task<ActionResult<List<VoterDto>>> GetVoters()
         {
